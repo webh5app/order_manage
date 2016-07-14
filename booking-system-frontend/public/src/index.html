@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Booking System</title>
+        <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="/css/booking.css">
+    </head>
+    <body>
+        <div class="container loginFormContainer">
+            <div class="row">
+                <div class="col-xs-12 title">
+                    Booking System Login
+                </div>
+            </div>
+            <div class="row">
+                <form class="form-horizontal" id="loginForm">
+                    <div class="form-group">
+                        <label class="col-xs-4 control-label">Username</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="username" placeholder="用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-4 control-label">Password</label>
+                        <div class="col-xs-8">
+                            <input type="password" class="form-control" name="password" placeholder="密码">
+                        </div>
+                    </div>
+                    <div class="form-group formSubmitBtnGroup">
+                        <div class="col-xs-1"></div>
+                        <button type="button" autocomplete="off" class="col-xs-10 btn btn-default loginBtn">Login</button>
+                        <div class="col-xs-1"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="row registerRow">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <span class="registerText">Register</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container registerFormContainer">
+            <div class="row">
+                <div class="col-xs-12 title">
+                    Booking System Register
+                </div>
+            </div>
+            <div class="row">
+                <form class="form-horizontal" id="registerForm">
+                    <div class="form-group">
+                        <label class="col-xs-4 control-label">Username</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="username" placeholder="用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-4 control-label">Password</label>
+                        <div class="col-xs-8">
+                            <input type="password" class="form-control" name="password" placeholder="密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-4 control-label"></label>
+                        <div class="col-xs-8">
+                            <input type="password" class="form-control" name="passwordRepeat" placeholder="重复密码">
+                        </div>
+                    </div>
+                    <div class="form-group formSubmitBtnGroup">
+                        <div class="col-xs-1"></div>
+                        <button type="button" autocomplete="off" class="col-xs-10 btn btn-default registerBtn">Register</button>
+                        <div class="col-xs-1"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="row loginRow">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <span class="loginText">Login</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container menuContainer">
+            <div class="row top">
+                <div class="col-xs-3 menu">
+                    <div class="dropdown">
+                        <button class="btn btn-default btn-block dropdown-toggle topDropDown" type="button" id="menuDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            创建新订单
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li id="menu_create">创建新订单</li>
+                            <li id="menu_history">管理订单</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-7"></div>
+                <div class="col-xs-2 userInfo">
+                    <div class="dropdown">
+                        <button class="btn btn-default btn-block dropdown-toggle topDropDown" type="button" id="userDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="username"></span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li id="logoutBtn">Logout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bookingFormContainer">
+            <div class="row contentRow">
+                <form class="form-horizontal" id="bookingForm">
+                    <div class="form-group">
+                        <div class="col-sm-6 col-xs-12 has-feedback">
+                            <label>项目创建人</label>
+                            <input type="text" class="form-control" name="principal" placeholder="姓名">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                        <div class="col-sm-6 col-xs-12 has-feedback">
+                            <label>所属部门</label>
+                            <input type="text" class="form-control" name="department" placeholder="部门名称">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12 has-feedback">
+                            <label>H5名称</label>
+                            <input type="text" class="form-control" name="title" placeholder="H5名称">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12 has-feedback">
+                            <label>文案</label>
+                            <textarea rows="5" class="form-control" name="content" placeholder="文案内容（请把所有需求都标注清楚）"></textarea>
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-12 col-sm-6">
+                            <label>H5类型</label>
+                            <div class="dropdown formDropDown">
+                                <button class="typeBtn" id="dLabel" value="type" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    请选择类型
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li>展示类（如邀请函）</li>
+                                    <li>功能类（如抽奖）</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <label>应用场景</label>
+                            <div class="dropdown formDropDown">
+                                <button class="usageBtn" id="dLabel" value="usage" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    请选择应用场景
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li>通用（默认值）</li>
+                                    <li>微信端</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-8 col-sm-4 has-feedback">
+                            <label>预计Design出图日期</label>
+                            <div class="input-group date">
+                                <input type="text" class="form-control" name="deadline_design" placeholder="请选择日期">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 has-feedback">
+                            <label>时间</label>
+                            <input type="text" class="form-control" name="time_design" placeholder="hh:mm">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                        <div class="col-xs-8 col-sm-4 has-feedback">
+                            <label>预计h5完成日期</label>
+                            <div class="input-group date">
+                                <input type="text" class="form-control" name="deadline_it" placeholder="请选择日期">
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-th"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 has-feedback">
+                            <label>时间</label>
+                            <input type="text" class="form-control" name="time_it" placeholder="hh:mm">
+                            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group formSubmitBtnGroup">
+                        <div class="col-xs-4"></div>
+                        <button type="button" autocomplete="off" class="col-xs-4 btn btn-lg btn-default" id="formSubmitBtn">提交订单</button>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container historyContainer">
+            <ul class="list-group"></ul>
+        </div>
+
+        <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                      <form class="form-horizontal" id="bookingForm">
+                          <div class="form-group">
+                              <fieldset disabled>
+                                  <div class="col-sm-6 col-xs-12">
+                                      <label>项目创建人</label>
+                                      <input type="text" class="form-control" name="principal">
+                                  </div>
+                                  <div class="col-sm-6 col-xs-12">
+                                      <label>所属部门</label>
+                                      <input type="text" class="form-control" name="department" placeholder="部门名称">
+                                  </div>
+                              </fieldset>
+                          </div>
+                          <div class="form-group">
+                              <div class="col-xs-12">
+                                  <label>H5名称</label>
+                                  <input type="text" class="form-control" name="title" placeholder="H5名称">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <div class="col-xs-12">
+                                  <label>文案</label>
+                                  <textarea rows="8" class="form-control" name="content" placeholder="文案内容（请把所有需求都标注清楚）"></textarea>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <div class="col-xs-12 col-sm-6">
+                                  <label>H5类型</label>
+                                  <div class="dropdown formDropDown">
+                                      <button class="typeBtn" id="dLabel" value="type" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          请选择类型
+                                          <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                          <li>展示类（如邀请函）</li>
+                                          <li>功能类（如抽奖）</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6">
+                                  <label>应用场景</label>
+                                  <div class="dropdown formDropDown">
+                                      <button class="usageBtn" id="dLabel" value="usage" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          请选择应用场景
+                                          <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                          <li>通用（默认值）</li>
+                                          <li>微信端</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <div class="col-xs-8 col-sm-6">
+                                  <label>预计Design出图日期</label>
+                                  <input type="text" class="form-control" name="deadline_design">
+                              </div>
+                              <div class="col-xs-8 col-sm-6">
+                                  <label>预计h5完成日期</label>
+                                  <input type="text" class="form-control" name="deadline_it" placeholder="hh:mm">
+                              </div>
+                          </div>
+                      </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-danger" id="deleteBtn">删除订单</button>
+                <button type="button" class="btn btn-primary" id="updateBtn">更新订单</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-datepicker.min.js"></script>
+    <script src="/js/booking.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/events.js"></script>
+</html>

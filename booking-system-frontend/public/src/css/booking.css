@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, arial;
+}
+
+.registerFormContainer {
+  display: none;
+  width: 450px;
+  margin-top: 150px;
+  padding: 2rem 3rem;
+  border: 1px solid #d2d7d3;
+  border-radius: 5px;
+}
+.registerFormContainer .control-label {
+  text-align: left;
+}
+.registerFormContainer .title {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.registerFormContainer .formSubmitBtnGroup {
+  margin-top: 4rem;
+}
+.registerFormContainer .form-control-feedback {
+  display: none;
+}
+.registerFormContainer .loginRow {
+  margin-top: .5rem;
+  text-align: center;
+  text-decoration: none;
+}
+.registerFormContainer .loginRow .loginText {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.loginFormContainer {
+  display: none;
+  width: 450px;
+  margin-top: 150px;
+  padding: 2rem 3rem;
+  border: 1px solid #d2d7d3;
+  border-radius: 5px;
+}
+.loginFormContainer .control-label {
+  text-align: left;
+}
+.loginFormContainer .title {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.loginFormContainer .formSubmitBtnGroup {
+  margin-top: 4rem;
+}
+.loginFormContainer .form-control-feedback {
+  display: none;
+}
+.loginFormContainer .registerRow {
+  margin-top: .5rem;
+  text-align: center;
+  text-decoration: none;
+}
+.loginFormContainer .registerRow .registerText {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.menuContainer {
+  display: none;
+}
+.menuContainer .top {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #d2d7d3;
+}
+.menuContainer .top .userInfo {
+  font-size: 1rem;
+}
+.menuContainer .top .userInfo .username {
+  color: #2c3e50;
+}
+.menuContainer .top .userInfo ul {
+  width: 100%;
+}
+.menuContainer .top .userInfo ul li {
+  padding: .1rem 1rem;
+  cursor: pointer;
+}
+.menuContainer .top .userInfo ul li:hover {
+  background-color: #f0f0f0;
+}
+.menuContainer .top .menu {
+  font-size: 1rem;
+}
+.menuContainer .top .menu ul {
+  width: 100%;
+  padding: 0;
+}
+.menuContainer .top .menu ul li {
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+.menuContainer .top .menu ul li:hover {
+  background-color: #f0f0f0;
+}
+.menuContainer .top .topDropDown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookingFormContainer {
+  display: none;
+}
+.bookingFormContainer .contentRow {
+  padding: .3rem 1.5rem;
+}
+.bookingFormContainer .form-group > div {
+  margin-top: 0.6rem;
+}
+.bookingFormContainer .form-control-feedback {
+  display: none;
+}
+.bookingFormContainer .formDropDown button {
+  width: 100%;
+  padding: .4rem .8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  background: none;
+}
+.bookingFormContainer .formDropDown ul {
+  width: 100%;
+  padding: 0;
+}
+.bookingFormContainer .formDropDown ul li {
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+}
+.bookingFormContainer .formDropDown ul li:hover {
+  background-color: #f0f0f0;
+}
+.bookingFormContainer .formSubmitBtnGroup {
+  margin-top: 6rem;
+}
+
+.historyContainer .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#updateModal > .modal-dialog {
+  width: 70%;
+}
+#updateModal > .modal-dialog .contentRow {
+  padding: .3rem 1.5rem;
+}
+#updateModal > .modal-dialog .form-group > div {
+  margin-top: 0.6rem;
+}
+#updateModal > .modal-dialog .form-control-feedback {
+  display: none;
+}
+#updateModal > .modal-dialog .formDropDown button {
+  width: 100%;
+  padding: .4rem .8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  background: none;
+}
+#updateModal > .modal-dialog .formDropDown ul {
+  width: 100%;
+  padding: 0;
+}
+#updateModal > .modal-dialog .formDropDown ul li {
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+}
+#updateModal > .modal-dialog .formDropDown ul li:hover {
+  background-color: #f0f0f0;
+}
+#updateModal > .modal-dialog .formSubmitBtnGroup {
+  margin-top: 6rem;
+}
